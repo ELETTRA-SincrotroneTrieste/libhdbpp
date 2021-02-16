@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+find_package(libhdbpp)
+
+include("${CMAKE_CURRENT_LIST_DIR}/libhdbpp-exampleTargets.cmake")
+
+set(BACKEND_TARGET_SHARED libhdbpp::@BACKEND_TARGET_SHARED@)
+set(BACKEND_TARGET_STATIC libhdbpp::@BACKEND_TARGET_STATIC@)
